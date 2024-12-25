@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// VARIABLES    
+$upToBgc: #fde506;
+$mainColor: #670998;
+$bgcColor: #000;
+$textColor: #fff;
+$starBgc: #219653;
+$clickedStar: #ef13c7;
+
+// MIXIN
+@mixin textInPage($size, $weight, $type) {
+    text-transform: $type;
+    font: {
+        size:$size;
+        weight: $weight;
+    }
+    color: $textColor;
+}
+@mixin textShadow($num1 , $num2 , $num3 , $color) {
+    text-shadow: $num1 $num2 $num3 $color;
+}
+@mixin poppins() {
+    font-family: 'poppins', sans-serif;
+}
+@mixin openSans() {
+    font-family: 'open sans', sans-serif;
+}
